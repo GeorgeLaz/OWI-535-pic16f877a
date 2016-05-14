@@ -12,15 +12,15 @@ void main()
 
 while(1)
   {
-   uart_rd = 0; //Set 0 Data
+   uart_rd = 0; //preset 0 Data
 
     if (USART_Data_Ready()) //if uart is ready start working
    {
-     uart_rd = USART_Read(); //SET uart_rd as uart Reading data
-     USART_Write(uart_rd); //resiving data from uart
+     uart_rd = USART_Read(); //SET uart_Read as uart_rd Reading data
+     USART_Write(uart_rd); // Read the received data
    }
 
-      switch(uart_rd) //Start use uart tranfer
+      switch(uart_rd) //Write the transfered data
        {
          //PORTB.F0 = 1 start motor LEFT M4 then Stop PORTB.F0 = 0 motor after 1000ms
          case '1' : PORTB.F0 = 1; Delay_ms(1000); PORTB.F0 = 0; break; 
