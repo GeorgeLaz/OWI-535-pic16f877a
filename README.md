@@ -1,4 +1,4 @@
-# TEI
+# ATEI Peiraia OWI-535 pic16f877a
 Code For All
 
 Compile ΜΟΝΟ στο Lab ΕΚΤΟΣ ΕΑΝ έχετε ακριβώς την ιδιά Version MikroC! 
